@@ -2,6 +2,8 @@
 
 Okerry UI는 여러 디자인 컨셉을 제공하는 CDN 전용 CSS 컴포넌트 라이브러리입니다. npm, 빌드 도구, JavaScript, 외부 폰트 없이 HTML, Thymeleaf, JSP 등에서 `<link>` 하나로 사용할 수 있습니다.
 
+코딩 에이전트가 Okerry UI를 적용할 때는 [AGENTS.md](AGENTS.md)의 선택 기준, 클래스 API, 테마 및 구현 규칙을 우선 확인합니다.
+
 ## 디렉터리 구조
 
 ```text
