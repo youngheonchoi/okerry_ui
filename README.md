@@ -38,14 +38,6 @@ CSS 파일명은 모든 컨셉과 버전에서 `okerry-ui.css`로 고정하며 �
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@main/concept/default/v1.0.0/okerry-ui.css">
 ```
 
-Git 태그와 컨셉 버전을 모두 고정:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@v1.0.0/concept/default/v1.0.0/okerry-ui.css">
-```
-
-운영 환경에서는 변경되지 않는 Git 태그 URL을 권장합니다.
-
 ## 테마 모드
 
 속성을 지정하지 않으면 운영체제의 라이트·다크 설정을 자동으로 따릅니다. 모드를 고정할 때는 `data-okerry-theme`을 사용합니다.
@@ -68,21 +60,21 @@ JavaScript 의존성은 없습니다. 실행 중 전환이 필요하면 사용�
 일반 HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@v1.0.0/concept/default/v1.0.0/okerry-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@main/concept/default/v1.0.0/okerry-ui.css">
 <button class="okerry-btn okerry-btn-primary">저장</button>
 ```
 
 Thymeleaf:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@v1.0.0/concept/default/v1.0.0/okerry-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@main/concept/default/v1.0.0/okerry-ui.css">
 <div class="okerry-card" th:text="${message}"></div>
 ```
 
 JSP:
 
 ```jsp
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@v1.0.0/concept/default/v1.0.0/okerry-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@main/concept/default/v1.0.0/okerry-ui.css">
 <button class="okerry-btn okerry-btn-primary">${buttonLabel}</button>
 ```
 
@@ -95,7 +87,3 @@ JSP:
   <input class="okerry-input" placeholder="이름">
 </div>
 ```
-
-## 브라우저 지원
-
-최신 Chrome, Edge, Firefox, Safari를 대상으로 합니다. 자세한 디자인 설명과 전체 컴포넌트 예제는 각 컨셉 문서에서 확인할 수 있습니다.
