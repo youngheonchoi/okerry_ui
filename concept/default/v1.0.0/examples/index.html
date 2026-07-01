@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okerry UI Default v1.0.0</title>
+  <link rel="stylesheet" href="../okerry-ui.css">
+</head>
+<body class="okerry_ui" style="margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <main class="okerry-container">
+    <section class="okerry-section okerry-stack">
+      <span class="okerry-badge okerry-badge-primary">v1.0.0</span>
+      <h1 class="okerry-title-2xl">Okerry UI Default</h1>
+      <p class="okerry-text-muted">범용성과 명확한 정보 구조에 초점을 둔 기본 컨셉입니다.</p>
+      <div class="okerry-row" role="group" aria-label="화면 모드 선택">
+        <button id="okerry-light-mode" class="okerry-btn okerry-btn-secondary" type="button" aria-pressed="false">라이트 모드</button>
+        <button id="okerry-dark-mode" class="okerry-btn okerry-btn-secondary" type="button" aria-pressed="false">다크 모드</button>
+      </div>
+      <code class="okerry-alert okerry-alert-info">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngheonchoi/okerry_ui@main/concept/default/v1.0.0/okerry-ui.css"&gt;</code>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">버튼</h2>
+      <div class="okerry-row">
+        <button class="okerry-btn okerry-btn-primary">저장</button><button class="okerry-btn okerry-btn-secondary">취소</button>
+        <button class="okerry-btn okerry-btn-danger">삭제</button><button class="okerry-btn okerry-btn-ghost">닫기</button>
+        <button class="okerry-btn okerry-btn-primary okerry-btn-sm">작게</button><button class="okerry-btn okerry-btn-primary okerry-btn-lg">크게</button>
+        <button class="okerry-btn okerry-btn-primary" disabled>비활성</button>
+      </div>
+      <button class="okerry-btn okerry-btn-primary okerry-btn-full">전체 너비 버튼</button>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">입력</h2>
+      <div class="okerry-grid okerry-grid-2">
+        <div class="okerry-field"><label class="okerry-label" for="email">이메일</label><input id="email" class="okerry-input" type="email" placeholder="email@example.com"><p class="okerry-help-text">가입한 이메일을 입력하세요.</p></div>
+        <div class="okerry-field"><label class="okerry-label" for="password">비밀번호</label><input id="password" class="okerry-input okerry-input-error" type="password" aria-invalid="true"><p class="okerry-error-text">비밀번호를 입력해주세요.</p></div>
+        <div class="okerry-field"><label class="okerry-label" for="message">메시지</label><textarea id="message" class="okerry-textarea" placeholder="내용을 입력하세요"></textarea></div>
+        <div class="okerry-field"><label class="okerry-label" for="status">상태</label><select id="status" class="okerry-select"><option>진행 중</option><option>완료</option></select></div>
+      </div>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">카드와 레이아웃</h2>
+      <div class="okerry-grid okerry-grid-3">
+        <article class="okerry-card"><header class="okerry-card-header"><h3 class="okerry-card-title">프로젝트 A</h3><p class="okerry-card-description">최근 수정된 프로젝트입니다.</p></header><div class="okerry-card-body"><p class="okerry-text">카드 본문에 필요한 정보를 배치합니다.</p></div><footer class="okerry-card-footer"><button class="okerry-btn okerry-btn-primary">열기</button></footer></article>
+        <article class="okerry-card"><header class="okerry-card-header"><h3 class="okerry-card-title">프로젝트 B</h3><p class="okerry-card-description">팀과 공유된 프로젝트입니다.</p></header><div class="okerry-card-body"><p class="okerry-text">모바일에서는 한 열로 표시됩니다.</p></div></article>
+        <article class="okerry-card"><header class="okerry-card-header"><h3 class="okerry-card-title">프로젝트 C</h3><p class="okerry-card-description">새로운 작업 공간입니다.</p></header><div class="okerry-card-body"><p class="okerry-caption">캡션 텍스트 예시</p></div></article>
+      </div>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">텍스트와 배지</h2>
+      <h3 class="okerry-title-lg">섹션 제목</h3><p class="okerry-text">기본 본문 텍스트입니다.</p><p class="okerry-text-muted">보조 설명 텍스트입니다.</p>
+      <div class="okerry-row"><span class="okerry-badge okerry-badge-primary">신규</span><span class="okerry-badge okerry-badge-success">완료</span><span class="okerry-badge okerry-badge-warning">대기중</span><span class="okerry-badge okerry-badge-danger">실패</span></div>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">알림</h2>
+      <div class="okerry-alert okerry-alert-info">새로운 업데이트가 있습니다.</div><div class="okerry-alert okerry-alert-success">저장이 완료되었습니다.</div>
+      <div class="okerry-alert okerry-alert-warning">확인이 필요한 항목이 있습니다.</div><div class="okerry-alert okerry-alert-danger">처리 중 오류가 발생했습니다.</div>
+    </section>
+
+    <section class="okerry-section okerry-stack">
+      <h2 class="okerry-title-xl">빈 화면과 로딩</h2>
+      <div class="okerry-empty"><h3 class="okerry-empty-title">데이터가 없습니다</h3><p class="okerry-empty-description">새 항목을 추가해보세요.</p><button class="okerry-btn okerry-btn-primary">추가하기</button></div>
+      <div class="okerry-row"><div class="okerry-spinner" role="status" aria-label="로딩 중"></div><div class="okerry-stack" style="flex:1"><div class="okerry-skeleton"></div><div class="okerry-skeleton" style="width:65%"></div></div></div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const lightButton = document.getElementById('okerry-light-mode');
+      const darkButton = document.getElementById('okerry-dark-mode');
+
+      const setTheme = (theme) => {
+        root.dataset.okerryTheme = theme;
+        lightButton.setAttribute('aria-pressed', String(theme === 'light'));
+        darkButton.setAttribute('aria-pressed', String(theme === 'dark'));
+        lightButton.classList.toggle('okerry-btn-primary', theme === 'light');
+        lightButton.classList.toggle('okerry-btn-secondary', theme !== 'light');
+        darkButton.classList.toggle('okerry-btn-primary', theme === 'dark');
+        darkButton.classList.toggle('okerry-btn-secondary', theme !== 'dark');
+      };
+
+      lightButton.addEventListener('click', () => setTheme('light'));
+      darkButton.addEventListener('click', () => setTheme('dark'));
+    })();
+  </script>
+</body>
+</html>
